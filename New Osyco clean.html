@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/Osyco logo.png" type="image/png">
+    <meta name="theme-color" content="#1e40af" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSYCO Clean: Professional Janitorial Services</title>
+    <meta name="description" content="OSYCO Clean provides top-quality janitorial services for offices and commercial spaces. We offer office cleaning, commercial cleaning, and deep cleaning services.">
+    <meta name="keywords" content="janitorial services, office cleaning, commercial cleaning, deep cleaning, cleaning services, OSYCO Clean">
+    <link rel="canonical" href="https://www.osycoclean.co.uk" /> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .video-container-text-align {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .nav-link:hover {
+            color: #93c5fd; /* Light blue hover */
+            transition: color 0.2s ease;
+        }
+        .quote-button:hover {
+            background-color: #4338ca; /* Darker indigo hover */
+            transform: translateY(-2px);
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+        .hero {
+            background-image: url(images/now.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative; /* Needed for overlay positioning */
+            overflow: hidden; /* Ensures overlay doesn't spill */
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+            border-radius: 0.5rem; /* Matches parent rounded-md */
+        }
+        .hero-content {
+            position: relative; /* Ensures content is above overlay */
+            z-index: 10; /* Ensures content is above overlay */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-800 text-white py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md">
+        <div class="logo text-xl font-bold ml-4 flex items-center">
+            <img src="images/Osyco logo.png" alt="OSYCO Clean Logo" class="mr-2 h-8">
+            <a href="#top" class="hover:text-blue-300 no-underline">OSYCO Clean</a>
+        </div>
+        <nav class="mr-4">
+            <ul class="flex space-x-4">
+                <li><a href="#services" class="nav-link no-underline">Services</a></li>
+                <li><a href="#about" class="nav-link no-underline">About Us</a></li>
+                <li><a href="#contact" class="nav-link no-underline">Contact</a></li>
+                <li><a href="#quote" class="nav-link no-underline">Request Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="top" class="hero text-white text-center py-32 px-4 rounded-md flex flex-col justify-center items-center">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="text-3xl font-semibold mb-4">Elevate Your Space with Impeccable Cleanliness</h1>
+            <p class="text-lg mb-8">Providing clean and healthy spaces for your business.</p>
+            <button onclick="window.location.href='#quote'" class="quote-button bg-indigo-700 text-white py-3 px-6 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75 text-lg">Request a Quote</button>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-gray-100 py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-semibold mb-8 text-blue-800">Our Services</h2>
+        <div class="service-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="service-card bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                <h3 class="text-xl font-semibold mb-4 text-blue-700">Office Cleaning</h3>
+                <p class="text-gray-700 mb-4">Comprehensive cleaning for offices of all sizes.</p>
+                 <ul class="list-disc list-inside text-left mx-auto max-w-xs">
+                    <li>Dusting and surface cleaning</li>
+                    <li>Floor cleaning and vacuuming</li>
+                    <li>Restroom sanitation</li>
+                    <li>Trash removal</li>
+                 </ul>
+            </div>
+            <div class="service-card bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                <h3 class="text-xl font-semibold mb-4 text-blue-700">Commercial Cleaning</h3>
+                <p class="text-gray-700 mb-4">Tailored cleaning solutions for various commercial spaces.</p>
+                <ul class="list-disc list-inside text-left mx-auto max-w-xs">
+                    <li>Retail spaces</li>
+                    <li>Restaurants</li>
+                    <li>Warehouses</li>
+                    <li>Event venues</li>
+                 </ul>
+            </div>
+            <div class="service-card bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                <h3 class="text-xl font-semibold mb-4 text-blue-700">Deep Cleaning</h3>
+                <p class="text-gray-700 mb-4">Thorough cleaning for a healthier environment.</p>
+                <ul class="list-disc list-inside text-left mx-auto max-w-xs">
+                    <li>Carpet cleaning</li>
+                    <li>Upholstery cleaning</li>
+                    <li>Window washing</li>
+                    <li>Floor stripping and waxing</li>
+                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-blue-100 py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-semibold mb-8 text-blue-800">About Us</h2>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            OSYCO Clean is committed to providing top-quality janitorial services with a focus on customer satisfaction. We use eco-friendly cleaning products and state-of-the-art equipment to ensure a clean and healthy environment for your business. Our experienced and dedicated team is here to meet all your cleaning needs.
+        </p>
+        <video controls width="640" height="360">
+  <source src="images/OSYCO advert.mp4" type="video/mp4">
+  <source src="images/OSYCO advert.webm" type="video/webm">
+  <p>Your browser does not support HTML video. Here is a <a href="images/OSYCO advert.mp4">link to the video</a> instead.</p>
+</video>
+    </section>
+
+    <section id="contact" class="section bg-gray-100 py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-semibold mb-8 text-blue-700">Contact Us</h2>
+        <p class="text-lg text-gray-700 mb-4">Email: Osyco.clean@gmail.com</p>
+    </section>
+
+    <section id="quote" class="section bg-white py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-semibold mb-8 text-blue-600">Request a Quote</h2>
+        <button onclick="requestQuote()" class="quote-button bg-indigo-700 text-white py-3 px-6 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75 text-lg">Get a Quote</button>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4 text-center rounded-md">
+        <p>© 2025 OSYCO Clean. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function requestQuote() {
+            alert('Thank you for your interest in OSYCO Clean! Please send your detailed request to Osyco.clean@gmail.com, and we will get back to you as soon as possible.');
+        }
+    </script>
+</body>
+</html>
